@@ -5,8 +5,10 @@ This is an actual use case from our HR department. In fact, the exact ask was "I
 
 To demonstrate this use case, this accelerator starts with raw data data in the form of a publicly available employee handbook. We use Valve's New Employee Handbook, which aside from being a fun read, is publicly available with a full path to the [PDF](https://cdn.cloudflare.steamstatic.com/apps/valve/Valve_NewEmployeeHandbook.pdf).
 
+![A look at the chatbot from this accelerator](./images/hr-chatbot-in-notebook.png)
+
 ## About This Accelerator
-This accelerator is self-contained. 
+This accelerator is self-contained across [five notebooks](./notebooks/). 
 1. No third party services are used. Everything, including your data, stays within your Databricks workspace.
 2. Although your workspace must attached to a Unity Catalog metastore, this accelerator generates the catalog, schema, tables and volumes for you.
 2. This accelerator leverages a managed volume in Unity Catalog. External storage does not have to be defined.
