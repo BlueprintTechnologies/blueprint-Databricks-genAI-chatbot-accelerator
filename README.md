@@ -5,6 +5,16 @@ This is an actual use case from our HR department. In fact, the exact ask was "I
 
 To demonstrate this use case, this accelerator starts with raw data data in the form of a publicly available employee handbook. We use Valve's New Employee Handbook, which aside from being a fun read, is publicly available with a full path to the [PDF](https://cdn.cloudflare.steamstatic.com/apps/valve/Valve_NewEmployeeHandbook.pdf).
 
+Some of the technical benefits of this accelerator:
+- Create a new catalog in Unity Catalog with bronze and silver tables and a managed volume
+- Extract and load PDF content into Unity Catalog using AutoLoader
+- Leverage Databricks Vector Search to create and store document embeddings
+- Leverage Databricks Vector Search and Delta Sync to create and sync a vector index with a Delta table
+- Leverage the llama2-70B-Chat model through with Databricks Foundation Model endpoint
+- Create a chat bot within a Databricks notebook
+
+
+
 ![A look at the chatbot from this accelerator](./images/hr-chatbot-in-notebook.png)
 
 ## About This Accelerator
