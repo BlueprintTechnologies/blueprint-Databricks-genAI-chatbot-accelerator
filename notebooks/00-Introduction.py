@@ -3,7 +3,7 @@
 # MAGIC # The Use Case
 # MAGIC Generative AI unlocks incredible value from data. The key is starting with a solid business use case to truly realize that value.
 # MAGIC
-# MAGIC The use case we will apply this accelerator is from our HR department. In fact, the exact ask was "Imagine if we flipped our HR inbox/etc. into something similar like a bot…trained it with our handbook, IT policies, benefits, engagement protocol, etc…it would cut down on so many of the asks!"
+# MAGIC The use case we will apply this accelerator to is from our HR department. In fact, the exact ask was "Imagine if we flipped our HR inbox/etc. into something similar like a bot…trained it with our handbook, IT policies, benefits, engagement protocol, etc…it would cut down on so many of the asks!"
 # MAGIC
 # MAGIC To demonstrate this use case, this accelerator starts with raw data data in the form of a publicly available employee handbook. We use Valve's New Employee Handbook, which aside from being a fun read, is publicly available with a full path to the [PDF](https://cdn.cloudflare.steamstatic.com/apps/valve/Valve_NewEmployeeHandbook.pdf).
 
