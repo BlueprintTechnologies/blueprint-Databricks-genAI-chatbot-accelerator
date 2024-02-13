@@ -44,7 +44,7 @@ volume_name = config['volume']
 from databricks.vector_search.client import VectorSearchClient
 
 # Initialize the Vector Search Client
-vectorClient = VectorSearchClient()
+vectorClient = VectorSearchClient(disable_notice=True)
 
 # Set the vector search endpoint name
 vector_search_endpoint_name = "employee_handbook_vector_search_endpoint"
@@ -52,11 +52,17 @@ vector_search_endpoint_name = "employee_handbook_vector_search_endpoint"
 # Set the vector search index
 vs_index_fullname = f"{catalog_name}.{schema_name}.{silver_layer_name}_{volume_name}_vector_search_index"
 
-# Delete the vector search index
-vectorClient.delete_index(
-    endpoint_name=vector_search_endpoint_name,
-    index_name=vs_index_fullname
-)
+try:
+    # Attempt to delete the vector search index
+    vectorClient.delete_index(
+        endpoint_name=vector_search_endpoint_name,
+        index_name=vs_index_fullname
+    )
+    print(f"Index {vs_index_fullname} deleted successfully.")
+except Exception as e:  # Consider replacing Exception with a more specific exception if applicable
+    # Handle the case where the index does not exist
+    print(f"Failed to delete index {vs_index_fullname}: {e}")
+
 
 # COMMAND ----------
 
